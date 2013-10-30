@@ -1,13 +1,17 @@
-# dsb
+# Data Service Base
 
-A Clojure library designed to ... well, that part is up to you.
+Data Service Base is a common starting point for creating data services that I use to collect data.
 
 ## Usage
 
-FIXME
+First clone the project into it own folder
 
-## License
+    git clone https://github.com/bblanton/DSB.git {folder-name}
 
-Copyright © 2013 FIXME
+Modify the service/content/job.clj file with your own service definition.  The only requirement is that this file must implement a run funciton.
 
-Distributed under the Eclipse Public License, the same as Clojure.
+You can also modify the the logging location in the service/core/init.clj file.
+
+Scheduling is set in the service/core/main.clj file.
+
+In a future release scheduling and logging location withh be configured using the service.conf file.
